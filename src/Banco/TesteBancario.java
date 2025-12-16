@@ -1,16 +1,20 @@
 package Banco;
 
-public class ContaCorrente {
+public class TesteBancario {
 
     public static void main(String[] args) {
 
         ContaBancaria conta = new ContaBancaria();
 
-        conta.consultarSaldo();
-        conta.depositar(200);
+        conta.depositar(2000);
         conta.sacar(100);
-        conta.cobrarTarifaMensal();
+        conta.consultarSaldo();
 
+        ContaCorrente contaCorrente = new ContaCorrente();
+
+        contaCorrente.depositar(4000);
+        contaCorrente.sacar(200);
+        contaCorrente.cobrarTarifaMensal(200);
 
     }
 }
